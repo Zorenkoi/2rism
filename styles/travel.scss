@@ -1,0 +1,165 @@
+.travel {
+  padding: 0px 0px 120px;
+}
+@media (max-width: 1000px) {
+  .travel {
+    padding: 0px 0px 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .travel {
+    padding: 0px 0px 60px;
+  }
+}
+.travel-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.travel-card {
+  width: calc(50% - 16px);
+  /* min-width: 480px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 380px;
+}
+.travel-card-img-wrapper {
+  min-width: calc(50% - 16px);
+  position: relative;
+  height: 100%;
+}
+
+.travel-card-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 32px;
+}
+@media (max-width: 1200px) {
+  .travel-card {
+    width: calc(50% - 8px);
+  }
+  .travel-card-img-wrapper {
+    min-width: calc(50% - 8px);
+  }
+  .travel-card-info {
+    padding-left: 16px;
+  }
+}
+.travel-card-title {
+  color: #161414;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+.travel-card-description {
+  color: #979797;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.travel-card-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.travel-card-data {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 24px;
+}
+.travel-card-people {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 24px;
+}
+.travel-card-comment {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.travel-card-bottom-img-wrapper {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.travel-card-bottom-text {
+  color: #979797;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1000px) {
+  .travel-card {
+    width: 100%;
+    max-height: 250px;
+  }
+  .travel-card-img-wrapper {
+    height: 250px;
+    min-width: 30%;
+  }
+  .travel-card2 {
+    flex-direction: row-reverse;
+  }
+  .travel-card2 .travel-card-info {
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-right: 32px;
+  }
+  .travel-card1 {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .travel-card {
+    width: 100%;
+    max-height: 999px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .travel-card-img-wrapper {
+    min-width: 100%;
+    height: 250px;
+  }
+  .travel-card2 {
+    /* flex-direction: row-reverse; */
+  }
+  .travel-card2 .travel-card-info {
+    align-items: flex-start;
+    padding: 15px 0px;
+  }
+  .travel-card1 .travel-card-info {
+    padding: 15px 0px;
+  }
+  .travel-card-description {
+    margin-bottom: 15px;
+  }
+
+  .travel-card1 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .travel-card-img-wrapper {
+    height: 200px;
+  }
+}
